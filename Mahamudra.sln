@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{775E8856-0442-4B93-84EF-FC44D0625AEC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9AF68257-31A0-4433-9E14-9C15F9A6010F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{EA2B42E8-A7A8-4C6C-9230-06DE8AD4D670}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mahamudra.Core", "src\Mahamudra.Core\Mahamudra.Core.csproj", "{A3201CDC-EB64-4D2F-9B7E-3C06FD2E9F1A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestsCore", "tests\UnitTests\UnitTestCore\UnitTestsCore.csproj", "{6058D8A3-F0E7-4FC1-B1E5-99FC6D35CD48}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mahamudra.Guard", "src\Mahamudra.Guard\Mahamudra.Guard.csproj", "{D87DEDA8-B0BE-42D7-9865-4DD77BF38217}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestsGuard", "tests\UnitTests\UnitTestGuard\UnitTestsGuard.csproj", "{50A4F4E3-D260-45E2-9048-D670A3D491EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8B94D2EE-9B17-4451-BBB2-08836D1435B1}"
+	ProjectSection(SolutionItems) = preProject
+		mitchell-ng-liang.jpg = mitchell-ng-liang.jpg
+		pawel-czerwinski.jpg = pawel-czerwinski.jpg
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3201CDC-EB64-4D2F-9B7E-3C06FD2E9F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3201CDC-EB64-4D2F-9B7E-3C06FD2E9F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3201CDC-EB64-4D2F-9B7E-3C06FD2E9F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3201CDC-EB64-4D2F-9B7E-3C06FD2E9F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6058D8A3-F0E7-4FC1-B1E5-99FC6D35CD48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6058D8A3-F0E7-4FC1-B1E5-99FC6D35CD48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6058D8A3-F0E7-4FC1-B1E5-99FC6D35CD48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6058D8A3-F0E7-4FC1-B1E5-99FC6D35CD48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D87DEDA8-B0BE-42D7-9865-4DD77BF38217}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D87DEDA8-B0BE-42D7-9865-4DD77BF38217}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D87DEDA8-B0BE-42D7-9865-4DD77BF38217}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D87DEDA8-B0BE-42D7-9865-4DD77BF38217}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50A4F4E3-D260-45E2-9048-D670A3D491EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50A4F4E3-D260-45E2-9048-D670A3D491EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50A4F4E3-D260-45E2-9048-D670A3D491EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50A4F4E3-D260-45E2-9048-D670A3D491EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EA2B42E8-A7A8-4C6C-9230-06DE8AD4D670} = {9AF68257-31A0-4433-9E14-9C15F9A6010F}
+		{A3201CDC-EB64-4D2F-9B7E-3C06FD2E9F1A} = {775E8856-0442-4B93-84EF-FC44D0625AEC}
+		{6058D8A3-F0E7-4FC1-B1E5-99FC6D35CD48} = {EA2B42E8-A7A8-4C6C-9230-06DE8AD4D670}
+		{D87DEDA8-B0BE-42D7-9865-4DD77BF38217} = {775E8856-0442-4B93-84EF-FC44D0625AEC}
+		{50A4F4E3-D260-45E2-9048-D670A3D491EE} = {EA2B42E8-A7A8-4C6C-9230-06DE8AD4D670}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6D44DD15-092C-475E-8991-0A8ED12D937C}
+	EndGlobalSection
+EndGlobal

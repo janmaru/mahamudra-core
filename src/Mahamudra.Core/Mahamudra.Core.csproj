@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Mahamudra.Core</RootNamespace>
+    <AssemblyName>Mahamudra.Core</AssemblyName>
+    <Authors>marujan</Authors>
+    <Company>Mahamudra</Company>
+    <Description>Railway Oriented Programming Library</Description>
+    <PackageId>Mahamudra.Core</PackageId>
+    <Product>Mahamudra.Result.Core</Product>
+  </PropertyGroup>
+
+</Project>
