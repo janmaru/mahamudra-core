@@ -1,6 +1,5 @@
 using Mahamudra.Core.Errors;
 using Mahamudra.Guard;
-using Mahamudra.Result.Core;
 using Mahamudra.Result.Core.Patterns;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
