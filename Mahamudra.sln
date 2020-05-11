@@ -8,6 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{9AF68257-31A0-4433-9E14-9C15F9A6010F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{EA2B42E8-A7A8-4C6C-9230-06DE8AD4D670}"
+	ProjectSection(SolutionItems) = preProject
+		tests\UnitTests\UnitTestsCategoryTheory\UnitTestInt32.cs = tests\UnitTests\UnitTestsCategoryTheory\UnitTestInt32.cs
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mahamudra.Core", "src\Mahamudra.Core\Mahamudra.Core.csproj", "{A3201CDC-EB64-4D2F-9B7E-3C06FD2E9F1A}"
 EndProject
@@ -24,7 +27,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		readme.md = readme.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestsCategoryTheory", "tests\UnitTests\UnitTestsCategoryTheory\UnitTestsCategoryTheory.csproj", "{3F1E7155-8005-480D-8628-67928A720FFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestsCategoryTheory", "tests\UnitTests\UnitTestsCategoryTheory\UnitTestsCategoryTheory.csproj", "{3F1E7155-8005-480D-8628-67928A720FFE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -9,11 +9,12 @@ namespace UnitTestsCategoryTheory
     public class UnitTestInt32
     {
         Int32Category int32Category = null;
-
+        Int32Category int32Categoryv2 = null;
         [TestInitialize]
         public void Init()
         {
-            int32Category = new Int32Category();
+            int32Category = new Int32Category(int.MinValue, int.MaxValue);
+            int32Categoryv2 = new Int32Category(-100, 100);
         }
 
         [DataTestMethod]
@@ -47,6 +48,7 @@ namespace UnitTestsCategoryTheory
             var result = Expression.Lambda<Func<bool>>(expression).Compile()();
             Assert.IsTrue(result);
         }
+
         [DataTestMethod]
         [DataRow(12)]
         [DataRow(-13)]
@@ -83,15 +85,16 @@ namespace UnitTestsCategoryTheory
             Assert.IsTrue(result);
         }
 
-        //[DataTestMethod]
-        //[DataRow(int.MinValue)]
-        //[DataRow(int.MinValue + 4)]
-        //[DataRow(int.MinValue + 229)]
-        //public void Object_IntegersShouldbeAnObject_True(int a)
-        //{
-        //    var expression = int32Category.Objects.Where(x => x == Expression.Constant(a)).FirstOrDefault();
+        [DataTestMethod]
+        [DataRow(34)]
+        [DataRow(-14)]
+        [DataRow(0)]
+        public void Object_IntegersShouldbeAnObject_True(int a)
+        {
+            var sa = Expression.Constant(a).ToString();
+            var expression = int32Categoryv2.Objects.Where(x => x.ToString() == sa).FirstOrDefault();
 
-        //    Assert.AreEqual(expression.ToString(), $"{a}");
-        //}
+            Assert.AreEqual(expression.ToString(), $"{sa}");
+        }
     }
 }

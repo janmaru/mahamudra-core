@@ -7,13 +7,23 @@ namespace UnitTestsCategoryTheory
 {
     public class Int32Category : ICategory<Expression, BinaryExpression>
     {
+        private readonly int _init;
+        private readonly int _end;
+        public Int32Category(int init, int end)
+        {
+            if (init >= end)
+                throw new Exception("The initial int should be bigger then the ending one.");
+            this._init = init;
+            this._end = end;
+        }
+
         /// <summary>Gets the objects.</summary>
         /// <value>The objects.</value>
         public IEnumerable<Expression> Objects
         {
             get
             {
-                for (int int32 = int.MinValue; int32 <= int.MaxValue; int32++)
+                for (int int32 = _init; int32 <= _end; int32++)
                 {
                     yield return Expression.Constant(int32);
                 }
