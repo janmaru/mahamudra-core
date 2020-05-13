@@ -15,6 +15,35 @@ namespace UnitTestsCategoryTheory
             dotnetCategory = new DotNetCategoryv2();
         }
 
+
+        [DataTestMethod]
+        [DataRow(1, "one", true, 0.1)]
+        [DataRow(5, "five", false, -4.5)]
+        [DataRow(0, "zero", false, 45.0)]
+        public void Associativity_ShouldEnforceLaw_AreEqual(int input, string middle, bool result, Double last)
+        {
+            var m1 = dotnetCategory.Morphism(Type.GetType($"System.Int32"), Type.GetType($"System.String"));
+            var m2 = dotnetCategory.Morphism(Type.GetType($"System.String"), Type.GetType($"System.Boolean")); 
+            var m3 = dotnetCategory.Morphism(Type.GetType($"System.Boolean"), Type.GetType($"System.Double"));
+
+            var m21 = dotnetCategory.Compose(m2, m1); 
+            var m32 = dotnetCategory.Compose(m3, m2); 
+            var m32_1 = dotnetCategory.Compose(m32, m1);
+
+            var m3_21 = dotnetCategory.Compose(m3, m21);
+
+            var v1 = m1.DynamicInvoke(input, middle);
+            var v2 = m2.DynamicInvoke(middle, result);
+            var v32 = m32.DynamicInvoke(middle, result, last); 
+            var v3 = m3.DynamicInvoke(result, last);
+            var v21 = m21.DynamicInvoke(input, middle, result);
+
+            var v32_1 = m32_1.DynamicInvoke(input, middle, last);
+            var v3_21 = m3_21.DynamicInvoke(input, result, last);
+
+            Assert.AreEqual(v32_1, v3_21);
+        }
+
         [DataTestMethod]
         [DataRow(1, "one", true)]
         [DataRow(5, "five", false)]
