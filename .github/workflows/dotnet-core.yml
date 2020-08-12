@@ -26,7 +26,7 @@ jobs:
         run: dotnet test --no-restore --verbosity normal
 
       # Publish Core
-      - name: publish on version change
+      - name: publish Core
         id: publish_nuget
         uses: rohith/publish-nuget@v2
         with:
@@ -62,8 +62,8 @@ jobs:
 
 
           # Publish Guard
-          - name: publish on version change
-            id: publish_nuget
+          - name: publish Guard
+            id: publish_nuget_guard
             uses: rohith/publish-nuget@v2
             with:
               # Filepath of the project to be packaged, relative to root of repository
