@@ -6,9 +6,12 @@
     <AssemblyName>Mahamudra.Core</AssemblyName>
     <Authors>marujan</Authors>
     <Company>Mahamudra</Company>
-    <Description>Railway Oriented Programming Library</Description>
+    <Description>Railway Oriented Programming Library and DDD patterns</Description>
     <PackageId>Mahamudra.Core</PackageId>
-    <Product>Mahamudra.Result.Core</Product>
+    <Product>Mahamudra Core</Product>
+    <PackageIcon>128_nuget.png</PackageIcon>
+    <PackageIconUrl>http://nuget-janmaru.s3-eu-west-1.amazonaws.com/packets/128_nuget.png</PackageIconUrl>
+
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,5 +20,10 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-
+  
+  <ItemGroup>
+    <None Update="128_nuget.png" Pack="true" PackagePath="">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>

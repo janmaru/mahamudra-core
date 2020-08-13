@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Mahamudra.Patterns
+namespace Mahamudra.Core.Entity
 {
     public abstract class BaseEntity<T>
     {
