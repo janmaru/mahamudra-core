@@ -12,7 +12,7 @@
     <PackageIcon>128_nuget.png</PackageIcon>
     <PackageIconUrl>http://nuget-janmaru.s3-eu-west-1.amazonaws.com/packets/128_nuget.png</PackageIconUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/janmaru/mahamudra-core</RepositoryUrl>
     <IsPackable>true</IsPackable>
   </PropertyGroup>
