@@ -22,7 +22,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTestsGuard", "tests\Uni
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8B94D2EE-9B17-4451-BBB2-08836D1435B1}"
 	ProjectSection(SolutionItems) = preProject
-		.github\workflows\dotnet-core.yml = .github\workflows\dotnet-core.yml
 		LICENSE.txt = LICENSE.txt
 		mitchell-ng-liang.jpg = mitchell-ng-liang.jpg
 		pawel-czerwinski.jpg = pawel-czerwinski.jpg
