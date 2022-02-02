@@ -1,32 +1,39 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Mahamudra.Core</RootNamespace>
-    <AssemblyName>Mahamudra.Core</AssemblyName>
-    <Authors>marujan</Authors>
-    <Company>Mahamudra</Company>
-    <Description>Railway Oriented Programming Library and DDD patterns</Description>
-    <PackageId>Mahamudra.Core</PackageId>
-    <Product>Mahamudra Core</Product>
-    <PackageIcon>128_nuget.png</PackageIcon>
-    <PackageIconUrl>http://nuget-janmaru.s3-eu-west-1.amazonaws.com/packets/128_nuget.png</PackageIconUrl>
-    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <RepositoryUrl>https://github.com/janmaru/mahamudra-core</RepositoryUrl>
-    <IsPackable>true</IsPackable>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>netcoreapp3.1;net6.0</TargetFrameworks>
+		<RootNamespace>Mahamudra.Core</RootNamespace>
+		<AssemblyName>Mahamudra.Core</AssemblyName>
+		<Authors>marujan</Authors>
+		<Company>Mahamudra</Company>
+		<Description>Railway Oriented Programming Library and DDD patterns</Description>
+		<PackageId>Mahamudra.Core</PackageId>
+		<Product>Mahamudra Core</Product>
+		<PackageIcon>lotus-flower.png</PackageIcon>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/janmaru/mahamudra-core</RepositoryUrl>
+		<IsPackable>true</IsPackable>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="GitVersion.MsBuild" Version="5.6.3">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
-  
-  <ItemGroup>
-    <None Update="128_nuget.png" Pack="true" PackagePath="">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="GitVersion.MsBuild" Version="5.8.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="lotus-flower.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="lotus-flower.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
 </Project>
