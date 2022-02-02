@@ -1,18 +1,43 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<RootNamespace>Mahamudra.Guard</RootNamespace>
+		<AssemblyName>Mahamudra.Guard</AssemblyName>
+		<Authors>marujan</Authors>
+		<Company>Mahamudra</Company>
+		<Description>Guard patterns</Description>
+		<PackageId>Mahamudra.Guard</PackageId>
+		<Product>Mahamudra Guard</Product>
+		<TargetFrameworks>netcoreapp3.1;net6.0</TargetFrameworks>
+		<PackageIcon>lotus-flower.png</PackageIcon> 
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/janmaru/mahamudra-core</RepositoryUrl>
+		<IsPackable>true</IsPackable>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="GitVersionTask" Version="5.3.7">
-      <PrivateAssets>all</PrivateAssets>
-      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-    </PackageReference>
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="GitVersion.MsBuild" Version="5.8.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Mahamudra.Core\Mahamudra.Core.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\Mahamudra.Core\Mahamudra.Core.csproj" />
+	</ItemGroup>
 
+	<ItemGroup>
+		<Content Include="lotus-flower.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="lotus-flower.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
 </Project>
