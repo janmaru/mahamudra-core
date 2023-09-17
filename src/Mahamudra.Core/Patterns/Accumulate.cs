@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 namespace Mahamudra.Result.Core.Patterns
 {
@@ -8,13 +10,14 @@ namespace Mahamudra.Result.Core.Patterns
             (this Result<TSuccess, TFailure> input,
             Func<Result<TSuccess, TFailure>, Result<TSuccess, TFailure>> function)
         {
-            var _ = function(input);
-            if (input.Success)
-            {
-                return _;
-            }
-            input.Messages.AddRange(_.Messages);
-            return new Failure<TSuccess, TFailure>(input.Messages);
+            List<TFailure> messages = new List<TFailure>();
+            var result = function(input);
+            if (input.Success) 
+                return result;
+            messages.AddRange(input.Messages); 
+            if(!result.Success)
+                messages.AddRange(result.Messages);
+            return new Failure<TSuccess, TFailure>(messages);
         }
 
         public static Result<TSuccess, TFailure> Acc<TSuccess, TFailure>

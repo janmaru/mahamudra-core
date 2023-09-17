@@ -8,7 +8,7 @@
 		<Description>Guard patterns</Description>
 		<PackageId>Mahamudra.Guard</PackageId>
 		<Product>Mahamudra Guard</Product>
-		<TargetFrameworks>netcoreapp3.1;net6.0</TargetFrameworks>
+		<TargetFramework>netstandard2.1</TargetFramework>
 		<PackageIcon>lotus-flower.png</PackageIcon> 
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>

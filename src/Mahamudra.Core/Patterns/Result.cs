@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Mahamudra.Core.Extensions;
+using System;
 using System.Collections.Generic;
 
 namespace Mahamudra.Result.Core.Patterns
@@ -7,29 +8,24 @@ namespace Mahamudra.Result.Core.Patterns
     {
         public Result(TSuccess input)
         {
-            _ = input ?? throw new Exception("You must provide an input!");
-            this.Value = input;
+            this.Value = input ?? throw new Exception("You must provide an input!");
+            this.Success = true;
         }
 
-        public Result(List<TMessage> messages)
+        public Result(IList<TMessage> messages)
         {
-            _ = messages ?? throw new Exception("You must provide an input for the messages!"); 
-            _ = Messages ?? (Messages = new List<TMessage>()); 
-            this.Messages.AddRange(messages);
-            Success = false;
+            this.Messages = messages.IsNullOrEmpty() ? throw new Exception("You must provide an input for the messages!") : messages;
+            this.Success = false;
         }
 
         public Result(TMessage message)
         {
-            _ = message ?? throw new Exception("You must provide an input for the message!");
-            _ = Messages ?? (Messages = new List<TMessage>());
-
-            this.Messages.Add(message);
-            Success = false;
+            this.Messages = new List<TMessage>() { message ?? throw new Exception("You must provide an input for the message!") };
+            this.Success = false;
         }
 
         public TSuccess Value { get; }
-        public bool Success { get; } = true;
-        public List<TMessage> Messages { get; }
+        public bool Success { get; }
+        public IList<TMessage> Messages { get; }
     }
-}
+} 

@@ -8,10 +8,8 @@ namespace Mahamudra.Result.Core.Patterns
             (this Result<TSuccess, TFailure> input,
             Func<Result<TSuccess, TFailure>, Result<TSuccess, TFailure>> function)
         {
-            if (input.Success)
-            {
-                return function(input);
-            }
+            if (input.Success) 
+                return function(input); 
             return new Failure<TSuccess, TFailure>(input.Messages);
         }
  

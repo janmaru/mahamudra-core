@@ -21,4 +21,4 @@ namespace UnitTestsCore
             Assert.IsTrue(error is Failure<Person, string>);
         }
     }
-}
+} 

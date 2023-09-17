@@ -4,7 +4,7 @@ namespace Mahamudra.Result.Core.Patterns
 {
     public class Failure<TSuccess, TMessage> : Result<TSuccess, TMessage>
     {
-        public Failure(List<TMessage> messages) : base(messages)
+        public Failure(IList<TMessage> messages) : base(messages)
         {
 
         }
@@ -14,5 +14,4 @@ namespace Mahamudra.Result.Core.Patterns
 
         }
     }
-}
- 
+} 
