@@ -17,11 +17,11 @@ namespace UnitTestsGuard
 
         public static Result<Option<string>, Error> IsFubar(this IGuard guard, string input, string parameter)
         {
-            var _ = Guard.Check.IsNullOrEmpty(input, parameter);
-            if (_ is Failure<string, Error>)
+            var result = Guard.Check.IsNullOrEmpty(input, parameter);
+            if (result is Failure<string, Error>)
                 return new Success<Option<string>, Error>(Option<string>.None);
             else
                 return IsFubar(input, parameter); 
         }
     }
-}
+} 

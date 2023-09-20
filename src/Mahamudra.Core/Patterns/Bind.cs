@@ -20,4 +20,4 @@ namespace Mahamudra.Result.Core.Patterns
             return function(input);
         }
     }
-}
+} 

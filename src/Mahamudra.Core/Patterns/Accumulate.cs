@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 
 namespace Mahamudra.Result.Core.Patterns
@@ -27,4 +26,4 @@ namespace Mahamudra.Result.Core.Patterns
             return function(input);
         }
     }
-}
+} 

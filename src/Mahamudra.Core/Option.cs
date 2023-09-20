@@ -1,6 +1,6 @@
 ﻿namespace Mahamudra.Result.Core
 {
-    public struct Option<T>
+    public readonly struct Option<T>
     {
         public static Option<T> None => default;
         public static Option<T> Some(T value) => new Option<T>(value);
@@ -20,4 +20,4 @@
             return isSome;
         }
     }
-}
+} 
