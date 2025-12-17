@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<RootNamespace>Mahamudra.Guard</RootNamespace>
+		<AssemblyName>Mahamudra.Guard</AssemblyName>
+		<Version>4.0.1</Version>
+		<Authors>marujan</Authors>
+		<Company>Mahamudra</Company>
+		<Description>Guard patterns</Description>
+		<PackageId>Mahamudra.Guard</PackageId>
+		<Product>Mahamudra Guard</Product>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<PackageIcon>lotus-flower.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/janmaru/mahamudra-core</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/janmaru/mahamudra-core</PackageProjectUrl>
+		<PackageTags>guard;validation;railway-oriented-programming;functional-programming</PackageTags>
+		<PackageReleaseNotes>Guard patterns with Railway Oriented Programming and .NET Standard 2.1 support</PackageReleaseNotes>
+		<IsPackable>true</IsPackable>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<ProjectReference Include="..\Mahamudra.Core\Mahamudra.Core.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Content Include="lotus-flower.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="lotus-flower.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Include="README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+</Project>

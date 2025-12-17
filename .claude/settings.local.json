@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dotnet build:*)",
+      "Bash(git push:*)",
+      "Bash(gh repo edit:*)",
+      "Bash(git remote set-head:*)"
+    ]
+  }
+}
