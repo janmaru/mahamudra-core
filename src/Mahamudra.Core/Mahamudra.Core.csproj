@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<RootNamespace>Mahamudra.Core</RootNamespace>
+		<AssemblyName>Mahamudra.Core</AssemblyName>
+		<Version>4.0.1</Version>
+		<Authors>marujan</Authors>
+		<Company>Mahamudra</Company>
+		<Description>Railway Oriented Programming Library and DDD patterns</Description>
+		<PackageId>Mahamudra.Core</PackageId>
+		<Product>Mahamudra Core</Product>
+		<PackageIcon>lotus-flower.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<RepositoryUrl>https://github.com/janmaru/mahamudra-core</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/janmaru/mahamudra-core</PackageProjectUrl>
+		<PackageTags>railway-oriented-programming;functional-programming;ddd;result;monads;either</PackageTags>
+		<PackageReleaseNotes>Railway Oriented Programming Library with .NET Standard 2.1 support</PackageReleaseNotes>
+		<IsPackable>true</IsPackable>
+	</PropertyGroup>
+
+
+	<ItemGroup>
+		<Content Include="lotus-flower.png">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="lotus-flower.png">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</None>
+		<None Include="README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
+</Project>
