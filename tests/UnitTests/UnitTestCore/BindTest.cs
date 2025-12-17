@@ -38,9 +38,9 @@ namespace UnitTestsCore
         public void Bind_ShouldFailValidateEmail_True()
         {
             var result = person1
-             .Bind(Validation.CheckName) 
+             .Bind(Validation.CheckName)
              .Bind(Validation.CheckEmail);
-            Assert.Contains(result.Messages, "Email should not be blank.");
+            Assert.Contains("Email should not be blank.", result.Messages);
         }
 
         [TestMethod]
@@ -50,7 +50,7 @@ namespace UnitTestsCore
              .Bind(Validation.CheckName)
              .Bind(Validation.CheckEmail)
              .Bind(Validation.CheckAge);
-            Assert.Contains(result.Messages, "The age should be not inferior than 18.");
+            Assert.Contains("The age should be not inferior than 18.", result.Messages);
         }
 
         [TestMethod]
@@ -60,7 +60,7 @@ namespace UnitTestsCore
              .Bind(Validation.CheckName)
              .Bind(Validation.CheckEmail)
              .Bind(Validation.CheckAge);
-            Assert.Contains(result.Messages, "Name should not be blank.");
+            Assert.Contains("Name should not be blank.", result.Messages);
         }
     }
 }
