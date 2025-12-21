@@ -1,10 +1,12 @@
-﻿namespace Mahamudra.Result.Core.Patterns
+﻿namespace Mahamudra.Core.Patterns
 {
-    public class Success<TSuccess, TMessage> : Result<TSuccess, TMessage>
+    /// <summary>
+    /// Represents a successful result.
+    /// </summary>
+    public sealed class Success<TSuccess, TMessage> : Result<TSuccess, TMessage>
     {
-        public Success(TSuccess input) : base (input)
+        public Success(TSuccess input) : base(input)
         {
-
-        } 
+        }
     }
 } 

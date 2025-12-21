@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<RootNamespace>Mahamudra.Guard</RootNamespace>
 		<AssemblyName>Mahamudra.Guard</AssemblyName>
-		<Version>4.0.1</Version>
+		<Version>5.0.0</Version>
 		<Authors>marujan</Authors>
 		<Company>Mahamudra</Company>
 		<Description>Guard patterns</Description>

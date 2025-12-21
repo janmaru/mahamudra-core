@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Mahamudra.Result.Core.Patterns
+namespace Mahamudra.Core.Patterns
 {
     public static partial class FunctionalExtensions
     {

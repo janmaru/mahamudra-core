@@ -4,7 +4,9 @@
       "Bash(dotnet build:*)",
       "Bash(git push:*)",
       "Bash(gh repo edit:*)",
-      "Bash(git remote set-head:*)"
+      "Bash(git remote set-head:*)",
+      "Bash(dotnet test:*)",
+      "Bash(find:*)"
     ]
   }
 }

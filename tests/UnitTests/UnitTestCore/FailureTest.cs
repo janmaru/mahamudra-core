@@ -1,4 +1,4 @@
-using Mahamudra.Result.Core.Patterns;
+using Mahamudra.Core.Patterns;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace UnitTestsCore

@@ -1,4 +1,4 @@
-﻿using Mahamudra.Result.Core.Patterns;
+﻿using Mahamudra.Core.Patterns;
 
 namespace UnitTestsCore
 {

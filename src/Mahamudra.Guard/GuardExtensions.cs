@@ -1,5 +1,5 @@
 ﻿using Mahamudra.Core.Errors;
-using Mahamudra.Result.Core.Patterns;
+using Mahamudra.Core.Patterns;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
