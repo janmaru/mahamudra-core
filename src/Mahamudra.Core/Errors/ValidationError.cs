@@ -13,7 +13,7 @@ namespace Mahamudra.Core.Errors
         public ValidationError(
             string description,
             string message = "",
-            IReadOnlyDictionary<string, string[]>? fieldErrors = null)
+            IReadOnlyDictionary<string, string[]> fieldErrors = null)
             : base(400, description, message)
         {
             FieldErrors = fieldErrors ?? new Dictionary<string, string[]>();
